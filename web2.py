@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 st.set_page_config(page_title="🌑 Diabetes Prediction", layout="wide", page_icon="🩺")
 
 # Load the trained model
-diabetes_model_path = r"C:\Users\muddassir\OneDrive\Desktop\Project2\diabetes_model.sav"
+diabetes_model_path = r"diabetes_model.sav"
 
 try:
     with open(diabetes_model_path, "rb") as model_file:
@@ -80,7 +80,7 @@ st.markdown("<h1 class='header'>🌑 Diabetes Prediction using ML</h1>", unsafe_
 st.markdown("<h3 style='text-align: center; color: #00E676;'>Enter your details below to check your diabetes risk.</h3>", unsafe_allow_html=True)
 
 # Load dataset for real-time accuracy calculation (Replace with actual dataset path)
-dataset_path = r"C:\Users\muddassir\OneDrive\Desktop\Project2\diabetes.csv"
+dataset_path = r"\diabetes.csv"
 
 try:
     data = pd.read_csv(dataset_path)
