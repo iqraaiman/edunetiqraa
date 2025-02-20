@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 st.set_page_config(page_title="Diabetes Prediction", layout="wide", page_icon="🩺")
 
 # Load the trained model
-diabetes_model_path = r"C:\Users\Sharaf\Desktop\project diabetes\diabetes_model1.sav"
+diabetes_model_path = r"diabetes_model1.sav"
 
 try:
     with open(diabetes_model_path, "rb") as model_file:
@@ -17,7 +17,7 @@ except Exception as e:
     st.error(f"⚠ Error loading the model: {e}")
 
 # Load dataset for real-time accuracy calculation
-dataset_path = r"C:\Users\Sharaf\Desktop\project diabetes\diabetes.csv"
+dataset_path = r"diabetes.csv"
 
 try:
     data = pd.read_csv(dataset_path)
